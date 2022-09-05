@@ -12,7 +12,6 @@ gem "jsonapi-serializer"
 gem "image_processing", "~> 1.2" # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem "importmap-rails"
 gem "money-rails", "~>1.12"
-gem "pg", "~> 1.1"
 gem "puma", "~> 5.0"
 gem "pundit"
 gem "rails", "~> 7.0.3"
@@ -27,7 +26,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ] # Windows does n
 gem 'remotipart'
 gem 'rails_admin'
 gem 'cancancan'
-
+gem "sqlite3", "~> 1.4"
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 
