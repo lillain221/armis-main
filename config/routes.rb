@@ -46,6 +46,7 @@ Rails.application.routes.draw do
   get 'cart/confirm'
   get 'cart/order_summery'
   get "search/:postal_code" => "search#postal_code"
+  get 'company', to: 'company#index'
   resources :like do
     member do
       get :index
