@@ -26,8 +26,9 @@
     <%= render "layouts/header" %>
     <%= yield %>
 
-    
+    <%unless request.url.include?("sign_")%>
     <%= render "layouts/footer" %>
+    <%end%>
   </body>
   </div>
 </html>

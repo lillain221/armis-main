@@ -14,12 +14,12 @@
         <ul class="drawer-menu">
 
     			<li>
-    				<a class="drawer-menu-item drawer-menu-item--main js-scrollReveal-delay" href="/company">
+    				<a data-turbo="false" class="drawer-menu-item drawer-menu-item--main js-scrollReveal-delay" href="/company" data-masthead-scroll>
     					ABOUT US
     				</a>
     			</li>
           <li>
-            <a class="drawer-menu-item drawer-menu-item--main js-scrollReveal-delay" href="./?mode=cate&cbid=2354708&csid=0">
+            <a data-turbo="false" class="drawer-menu-item drawer-menu-item--main js-scrollReveal-delay" href="./?mode=cate&cbid=2354708&csid=0">
               VISION
             </a>
           </li>
@@ -56,7 +56,7 @@
     			</li>
           <li>
 
-          <%= link_to "Log out", destroy_user_session_path, data: { "turbo-method": :delete }, class: "drawer-menu-item drawer-menu-item--main js-scrollReveal-delay" %>
+          <%= link_to "LOG OUT", destroy_user_session_path, data: { "turbo-method": :delete }, class: "drawer-menu-item drawer-menu-item--main js-scrollReveal-delay" %>
 
           </li>
           <% else %>
@@ -81,3 +81,4 @@
   </header>
 
 </div>
+
